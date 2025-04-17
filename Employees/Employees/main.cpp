@@ -1,4 +1,11 @@
-
+/**
+ * @file main.cpp
+ * @author Mason Enochs
+ * @date 2025-04-17
+ * @brief tests the employee, officer, and supervisor classes, and implementation
+ * 
+ * 
+ */
 #include <iostream>
 #include "Employee.h"
 #include "Supervisor.h"
@@ -6,8 +13,18 @@
 
 using namespace std;
 
+// function documentation is below by inplementaion
 void runEmployeeTests(Employee & e);
 
+
+/**
+ * creates sever employee / officer / supervisor objects and tests them to see if they work as intended.
+ *
+ * @pre 
+ * @return int 
+ * @post 
+ * 
+ */
 int main() {
   // Test default Employee constructor
   Employee defaultE;
@@ -55,6 +72,16 @@ int main() {
   return 0;
 }
 
+
+/**
+ * tests running the basics of a given employee to make sure everything is working as intended
+ *
+ * @param Employee &e 
+ * @pre 
+ * @return void 
+ * @post 
+ * 
+ */
 void runEmployeeTests(Employee &e) {
   
   cout << "Initial print():" << endl;
